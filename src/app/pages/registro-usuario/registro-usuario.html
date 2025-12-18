@@ -1,0 +1,55 @@
+<section class="flex min-h-screen items-center justify-center bg-gray-100 p-4">
+  
+  <div class="w-full max-w-md rounded-lg bg-white p-8 shadow-lg">
+    <h2 class="mb-6 text-center text-2xl font-bold text-gray-800">Criar Nova Conta</h2>
+
+    <form  class="space-y-4">
+      
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Nome de Usuário</label>
+        <input 
+          type="text" 
+          formControlName="username" 
+          placeholder="Ex: joao_dev"
+          class="mt-1 w-full rounded-md border border-gray-300 p-2 
+          shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+        >
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Nome Completo</label>
+        <input 
+          type="text" 
+          formControlName="name" 
+          placeholder="Digite seu nome"
+          class="mt-1 w-full rounded-md border border-gray-300 p-2 
+          shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+        >
+        
+
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Senha</label>
+        <input 
+          type="password" 
+          formControlName="password" 
+          placeholder="******"
+          class="mt-1 w-full rounded-md border 
+          border-gray-300 p-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+        >
+        
+
+      </div>
+
+      <button 
+        type="submit" 
+        class="w-full rounded-md bg-blue-600 py-2 font-semibold 
+        text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:bg-gray-400"
+      >
+        CADASTRAR
+      </button>
+
+    </form>
+  </div>
+</section>
